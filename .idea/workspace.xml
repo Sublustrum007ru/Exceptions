@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a8d6f11-f38b-48e0-a6c6-64e36d1fab60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/repository/impl/FileOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/repository/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/repository/impl/FileOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/impl/FileOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <workItem from="1714059973226" duration="12000" />
       <workItem from="1714060038441" duration="6177000" />
       <workItem from="1714325494058" duration="32000" />
-      <workItem from="1714563759793" duration="8335000" />
+      <workItem from="1714563759793" duration="24944000" />
     </task>
     <servers />
   </component>

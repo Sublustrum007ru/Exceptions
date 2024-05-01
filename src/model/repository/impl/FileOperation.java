@@ -2,16 +2,17 @@ package model.repository.impl;
 
 import model.repository.Operation;
 
-import java.util.List;
+import java.io.File;
+import java.io.IOException;
 
 public class FileOperation implements Operation {
-    @Override
-    public List<String> readAll() {
-        return List.of();
-    }
 
     @Override
-    public void saveAll(List<String> data) {
-
+    public File createFileName(String args) throws IOException {
+        String path = "src/DB/" + args + ".txt";
+        File result = new File(path);
+        result.getParentFile().mkdirs();
+        result.createNewFile();
+        return result;
     }
 }

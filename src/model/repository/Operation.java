@@ -1,8 +1,8 @@
 package model.repository;
 
-import java.util.List;
+import java.io.File;
+import java.io.IOException;
 
 public interface Operation {
-    List<String> readAll();
-    void saveAll(List<String> data);
+    File createFileName(String args) throws IOException;
 }
