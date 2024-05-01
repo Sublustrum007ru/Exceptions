@@ -27,4 +27,22 @@ public class User {
     public int getPhone() {return phone;}
     public char getGender() {return gender;}
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+    public void setPhone(int phone) {
+        this.phone = phone;
+    }
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
 }
