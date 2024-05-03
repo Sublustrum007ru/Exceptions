@@ -7,9 +7,9 @@
     <list default="true" id="6a8d6f11-f38b-48e0-a6c6-64e36d1fab60" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/Gusev.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/repository/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/Operation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/repository/impl/FileOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/impl/FileOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Validator.java" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Idea Projects/Leason4",
+    "last_opened_file_path": "D:/Idea Projects/TestBySublustrum007",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,7 +107,9 @@
       <workItem from="1714059973226" duration="12000" />
       <workItem from="1714060038441" duration="6177000" />
       <workItem from="1714325494058" duration="32000" />
-      <workItem from="1714563759793" duration="24944000" />
+      <workItem from="1714563759793" duration="25473000" />
+      <workItem from="1714605245499" duration="389000" />
+      <workItem from="1714746763562" duration="7301000" />
     </task>
     <servers />
   </component>

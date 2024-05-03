@@ -1,7 +1,5 @@
 package model;
 
-import java.util.Date;
-
 public class User {
     private String firstName;
     private String lastName;
@@ -19,32 +17,43 @@ public class User {
         this.phone = phone;
         this.gender = gender;
     }
+    public User()
+        {}
+    public User createUser(String firstName, String lastName, String surname, String birthDate, String phone, String gender){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.surname = surname;
+        this.birthDate = birthDate;
+        this.phone = phone;
+        this.gender = gender;
+        return this;
+    }
 //
-//    public String getFirstName() {return firstName;}
+    public String getFirstName() {return firstName;}
 //    public String getLastName() {return lastName;}
 //    public String getSurname() {return surname;}
 //    public String getBirthDate() {return birthDate;}
 //    public String getPhone() {return phone;}
 //    public String getGender() {return gender;}
-//
-//    public void setFirstName(String firstName) {
-//        this.firstName = firstName;
-//    }
-//    public void setLastName(String lastName) {
-//        this.lastName = lastName;
-//    }
-//    public void setSurname(String surname) {
-//        this.surname = surname;
-//    }
-//    public void setBirthDate(String birthDate) {
-//        this.birthDate = birthDate;
-//    }
-//    public void setPhone(String phone) {
-//        this.phone = phone;
-//    }
-//    public void setGender(String gender) {
-//        this.gender = gender;
-//    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     @Override
     public String toString(){
