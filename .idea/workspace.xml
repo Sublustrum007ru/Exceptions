@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/src/DB/Gusev.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/repository/impl/FileOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/impl/FileOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +108,7 @@
       <workItem from="1714325494058" duration="32000" />
       <workItem from="1714563759793" duration="25473000" />
       <workItem from="1714605245499" duration="389000" />
-      <workItem from="1714746763562" duration="7301000" />
+      <workItem from="1714746763562" duration="14529000" />
     </task>
     <servers />
   </component>

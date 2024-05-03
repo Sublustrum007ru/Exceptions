@@ -9,6 +9,10 @@ public class Validator {
     private String[] result = new String[6];
     private View view = new View();
 
+    public boolean scheckUser(){
+        return true;
+    }
+
     public String[] scheckLine(String[] line) {
         if (line.length != 6) {
             System.out.println("Введенено не верное колличество данных");
@@ -94,10 +98,10 @@ public class Validator {
     }
 
     public String isGender(String line) {
-        if(line.equals("f") && line.equals("m")){
-            return line.toLowerCase();
+        if(!line.equals("f") && !line.equals("m")){
+            System.out.println("Допущена ошибка в написание пола.");
+            return line = view.prompt("Повторите ввод латинецей. Где <F> - жинский, <M> - мужской: ").toLowerCase();
         }
-        System.out.println("Допущена ошибка в написание пола.");
-        return line = view.prompt("Повторите ввод латинецей. Где <F> - жинский, <M> - мужской: ").toLowerCase();
+        return line.toLowerCase();
     }
 }
