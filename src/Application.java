@@ -29,29 +29,22 @@ public class Application {
 
     public void start() throws ParseException {
         View view = new View();
-//        String str = view.prompt("Введите (Фамилью, имя, отчество, дату_рождения, номер_телефона, пол) через пробел: ");
-        String str = "Gusev Antosha Sergeevich 31.03.1986 89060884050 m";
-        String[] line1 = vl.scheckLine(str.split(" "));
-        user.setFirstName(vl.isAlpha(line1[0], "F"));
-        user.setLastName(vl.isAlpha(line1[1], "L"));
-        user.setSurname(vl.isAlpha(line1[2], "S"));
-        user.setBirthDate(vl.isDate(line1[3]));
-        user.setPhone(vl.isNumeric(line1[4]));
-        user.setGender(vl.isGender(line1[5].toLowerCase()));
-        String line;
-        try (BufferedReader in = new BufferedReader(new FileReader(file.createFileName(user.getFirstName())))) {
-            while ((line = in.readLine()) != null) {
-                String tempUser = user.toString();
-                System.out.println("if(" + line + " != " + tempUser + ")");
-                if(tempUser != line) {
-                    System.out.println("Good luck");
-                }else{
-                    System.out.println("Bad");
-                }
+        String str = view.prompt("Введите (Фамилью, имя, отчество, дату_рождения, номер_телефона, пол) через пробел: ");
+//        String str = "Gusev Anton Sergeevich 31.03.1986 89060884050 m";
+        String[] line = vl.scheckLine(str.split(" "));
+        User newUser = user.createUser(line);
+        if(vl.scheckUser(newUser)){
+            try (FileWriter fr = new FileWriter(file.createFileName(user.getFirstName()), true)) {
+                fr.write(String.valueOf(user));
+                fr.flush();
+                System.out.println("Запись добавлена");
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        }else{
+            System.out.println("Идентичная запись уже существует");
         }
 
     }
+
 }

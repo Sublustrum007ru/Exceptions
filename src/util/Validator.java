@@ -1,19 +1,46 @@
 package util;
 
+import model.User;
+import model.repository.impl.FileOperation;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Validator {
 
-    private String[] result = new String[6];
     private View view = new View();
 
-    public boolean scheckUser(){
-        return true;
+    private final FileOperation file = new FileOperation();
+
+    private User user = new User();
+
+    public boolean scheckUser(User newUser){
+        String line;
+        int count = 0;
+        try (BufferedReader in = new BufferedReader(new FileReader(file.createFileName(newUser.getFirstName())))) {
+            while ((line = in.readLine()) != null) {
+                String[] test = line.replace("><", " ").replace("<", "").replace(">", "").split(" ");
+                User tempUser = user.createUser(test);
+                if(newUser.equals(tempUser)){
+                    count++;
+                }else{
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if(count == 0){
+            return true;
+        }
+        return false;
     }
 
     public String[] scheckLine(String[] line) {
+        String[] result = new String[6];
         if (line.length != 6) {
             System.out.println("Введенено не верное колличество данных");
             View view = new View();
@@ -104,4 +131,5 @@ public class Validator {
         }
         return line.toLowerCase();
     }
+
 }
